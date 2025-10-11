@@ -1,12 +1,23 @@
+import EditButton from "./editButton"
 import Profile from "./profileImage"
 import ProfileName from "./profileName&About"
 function AboutSec() {
     return (
-        <section className="flex h-screen">
-            <aside className="basis-1/3 h-auto flex justify-center">
-                <div className="flex flex-col justify-start gap-5">
+        <section className="flex h-auto">
+            <aside className="basis-1/3 h-auto flex justify-start pl-10">
+                <div className="flex flex-col justify-start gap-2">
                     <Profile />
-                    <ProfileName />
+                    <div className="flex flex-col gap-3">
+                        <ProfileName />
+                        <EditButton />
+                    </div>
+                    <div className="flex flex-col border-1 border-amber-50 h-[200px]">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </aside>
             <aside className="basis-2/3 pt-0 pr-20 pl-20">
