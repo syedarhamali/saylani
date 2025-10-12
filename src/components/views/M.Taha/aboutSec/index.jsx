@@ -11,7 +11,7 @@ function AboutSec() {
         intro: ""
     }
     return (
-        <section className="flex h-[100vh] justify-center bg-black">
+        <section className="flex flex-col lg:flex-row min-h-screen pt-10 justify-center bg-black  ">
             <aside className="basis-1/3 h-auto flex justify-start pl-10">
                 <div className="flex flex-col justify-start gap-2">
                     <Profile />
@@ -24,7 +24,7 @@ function AboutSec() {
                     </div>
                 </div>
             </aside>
-            <aside className="basis-2/3 pt-0 pr-20 pl-0">
+            <aside className="lg:basis-2/3 pt-5 px-5 lg:pt-0 lg:pr-20 lg:pl-0">
                 <div className="border-1 border-amber-50 p-5 rounded-[5px] w-[100%]">
                     <Intro />
                 </div>
