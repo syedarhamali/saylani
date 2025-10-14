@@ -6,7 +6,6 @@ import TabsLink from './components/Moiz/TabsLink'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
