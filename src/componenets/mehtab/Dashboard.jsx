@@ -1,4 +1,5 @@
 import React from "react";
+import TabsLink from "../../components/Moiz/TabsLink";
 
 const Dashboard = () => {
   return (
@@ -6,10 +7,10 @@ const Dashboard = () => {
       <div
         className="grid grid-rows-[min-content_1fr]  grid-cols-1  lg:grid-cols-[250px_1fr] gap-4  h-[calc(100vh-2rem)]">
         {/* header */}
-        <header className="col-span-1 lg:col-span-2 bg-white rounded-xl shadow p-4 min-h-24 border-2 border-black"></header>
+        <header className="col-span-1 lg:col-span-2 bg-white rounded-xl shadow p-4 min-h-24 border-2 border-black">Dashboard - Home</header>
         {/* side bar */}
         <aside className="hidden lg:block bg-white rounded-xl shadow p-4 min-h-[320px] border-2 border-black">
-           
+           <TabsLink />
     
         </aside>
         {/* main content */}

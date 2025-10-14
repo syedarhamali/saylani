@@ -3,6 +3,7 @@ import Intro from "./Introduction"
 import Profile from "./profileImage"
 import ProfileName from "./profileName&About"
 import SocialIcons from "./Social-icons"
+
 function AboutSec() {
     let profileObj = {
         fullName: "Taha Bin Shafiq",

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { NavLink } from 'react-router'
 
 function TabsLink() {
 
@@ -28,15 +29,15 @@ function TabsLink() {
 
     ])
     return (
-        <div className="flex justify-center gap-6 bg-gray-100 py-4 shadow-md">
+        <div className="flex flex-col justify-center gap-6 bg-gray-100 py-4 shadow-md">
             {tabs.map((elem) => (
-                <a
+                <NavLink
                     key={elem.id}
-                    href={elem.Path}
+                    to={elem.Path}
                     className="text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-200"
                 >
                     {elem.label}
-                </a>
+                </NavLink>
             ))}
         </div>
     )
