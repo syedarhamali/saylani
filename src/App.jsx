@@ -1,15 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-import Dashboard from './componenets/mehtab/Dashboard'
+import AppRoutes from "./components/AppRoutes (CreatedBy-Nabeel)/AppRoutes";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-   <Dashboard />
-    </>
-  )
+    <AppRoutes />
+  );
 }
 
-export default App
